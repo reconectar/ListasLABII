@@ -92,7 +92,7 @@ public class CFila {
 	}
 
 	// Questao 9 lista 3
-	// Chama o método desempilha enquanto nao estiver vazio (enquanto quantidade for
+	// Chama o mï¿½todo desempilha enquanto nao estiver vazio (enquanto quantidade for
 	// diferente de 0)
 	void limpa() {
 		while (this.qtde != 0) {
@@ -101,8 +101,15 @@ public class CFila {
 	}
 	
 	// Questao 10 lista 3
-	void furarFila(Object item) {
-		
+	void furaFila(Object item) {
+		if(frente != tras) {			
+			CCelula aux = new CCelula();
+			aux.prox = frente.prox;
+			aux.item = item;
+			frente.prox = aux;
+		}else{
+			enfileira(item);
+		}
 	}
 
 }
