@@ -66,6 +66,16 @@ public static void main(String[] args) {
 
 // Questao 5
 
+	//DENTRO DA CLASSE ALUNO
+		@Override
+	public String toString() {
+		
+		i++;
+		return i +" - " + nome + " - " + matricula;
+	}
+	//
+	
+	//MAIN
 	public static void main(String[] args) {
 		
 		CLista lista1 = new CLista();
