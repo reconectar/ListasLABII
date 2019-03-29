@@ -2,6 +2,7 @@ public class Aluno {
 	
 	private String nome;
 	private int matricula;
+	public static int i=0;;
 	
 	public Aluno(){
 		this.nome = "Capistrano";
@@ -35,7 +36,9 @@ public class Aluno {
 	
 	@Override
 	public String toString() {
-		return "Aluno [nome=" + nome + ", matricula=" + matricula + "]";
+		
+		i++;
+		return i +" - " + nome + " - " + matricula;
 	}
 	
 }

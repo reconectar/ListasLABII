@@ -1,17 +1,17 @@
 
 public class Lista47 {
 	
-	static int somaTermos(CPilha x){
-		int soma = 0;
+	static int qtdPositivos(CPilha x){
+		int qtd = 0;
 		while(x.quantidade()!=0) {
 			if((int)x.peek()>0) {
-				soma+=(int)x.desempilha();				
+				qtd++;			
 			}else {
 				x.desempilha();
 			}
 		}
 		
-		return soma;
+		return qtd;
 	}
 
 	public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class Lista47 {
 		a.empilha(1);
 		a.empilha(-3);
 		
-		System.out.println(somaTermos(a));
+		System.out.println(qtdPositivos(a));
 		
 	}
 

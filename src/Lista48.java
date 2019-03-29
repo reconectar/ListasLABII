@@ -1,16 +1,24 @@
 public class Lista48 {
 	
-	public static void numOcorrencias(CLista a, Object b) {
-		
+	public static int numOcorrencias(CFila a, int b) {
+		int achei = 0;
+		while(a.quantidade()!=0) {
+			if((int)a.desenfileira()==b) {
+				achei++;
+			}
+		}
+		return achei;
 	}
 
 	public static void main(String[] args) {
-		CLista a = new CLista();
-		a.insereComeco(3);
-		a.insereComeco(5);
-		a.insereComeco(3);
-		a.insereComeco(-3);
-		a.insereComeco(4);
+		CFila a = new CFila();
+		a.enfileira(3);
+		a.enfileira(5);
+		a.enfileira(3);
+		a.enfileira(-3);
+		a.enfileira(4);
+		
+		System.out.println(numOcorrencias(a, 3));
 	}
 
 }
