@@ -5,7 +5,8 @@ public class Lista47 {
 		int qtd = 0;
 		while(x.quantidade()!=0) {
 			if((int)x.peek()>0) {
-				qtd++;			
+				qtd++;
+				x.desempilha();
 			}else {
 				x.desempilha();
 			}
