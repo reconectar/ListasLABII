@@ -10,13 +10,13 @@ public class CPilha {
 	private CCelula topo = null;
 	private int qtde;
 
-	// Função construtora.
+	// Funï¿½ï¿½o construtora.
 	public CPilha() {
-		// nenhum código
+		// nenhum cï¿½digo
 	}
 
-	// Verifica se a Pilha está vazia.
-	// Retorna TRUE se a PILHA estiver vazia e FALSE caso contrário.
+	// Verifica se a Pilha estï¿½ vazia.
+	// Retorna TRUE se a PILHA estiver vazia e FALSE caso contrï¿½rio.
 	public boolean vazia() {
 		return topo == null;
 	}
@@ -42,8 +42,8 @@ public class CPilha {
 		return item;
 	}
 
-	// Verifica se o item passado como parâmetro está contido na lista.
-	// O parâmetro "valorItem"> é um object contendo o item a ser localizado.
+	// Verifica se o item passado como parï¿½metro estï¿½ contido na lista.
+	// O parï¿½metro "valorItem"> ï¿½ um object contendo o item a ser localizado.
 	// Retorna TRUE caso o item esteja presente na lista.
 	public boolean contem(Object valorItem) {
 		boolean achou = false;
@@ -55,9 +55,9 @@ public class CPilha {
 		return achou;
 	}
 
-	// Verifica se o item passado como parâmetro está contido na pilha. (Obs: usa o
+	// Verifica se o item passado como parï¿½metro estï¿½ contido na pilha. (Obs: usa o
 	// comando FOR)
-	// O parâmetro "valorItem"> é um object contendo o item a ser localizado.
+	// O parï¿½metro "valorItem"> ï¿½ um object contendo o item a ser localizado.
 	// Retorna TRUE caso o item esteja presente na lista.
 	public boolean contemFor(Object valorItem) {
 		boolean achou = false;
@@ -72,18 +72,16 @@ public class CPilha {
 		return (topo != null) ? topo.item : null;
 	}
 
-	// Método que retorna a quantidade de itens da Pilha.
+	// Mï¿½todo que retorna a quantidade de itens da Pilha.
 	public int quantidade() {
 		return qtde;
 	}
 
 	// Questao 8 lista 3
-	// Chama o método desempilha enquanto nao estiver vazio (enquanto quantidade for
+	// Chama o mï¿½todo desempilha enquanto nao estiver vazio (enquanto quantidade for
 	// diferente de 0)
 	void limpa() {
-		while (this.qtde != 0) {
-			this.desempilha();
-		}
+		this.topo = null;
 	}
 
 }

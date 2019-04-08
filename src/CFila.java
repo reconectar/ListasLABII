@@ -95,9 +95,8 @@ public class CFila {
 	// Chama o m�todo desempilha enquanto nao estiver vazio (enquanto quantidade for
 	// diferente de 0)
 	void limpa() {
-		while (this.qtde != 0) {
-			this.desenfileira();
-		}
+		this.frente = null;
+		this.tras = this.frente;
 	}
 	
 	// Questao 10 lista 3
